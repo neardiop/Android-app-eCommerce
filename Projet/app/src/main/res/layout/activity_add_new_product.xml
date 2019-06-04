@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".AddNewProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/ret"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_cross" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/select_product_image"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:cropToPadding="false"
+            android:src="@drawable/camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Nom du produit"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+        <EditText
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Description"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+        <EditText
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Prix"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+
+        <Button
+            android:id="@+id/add_new_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Ajouter"
+            android:textColor="@color/black"
+            android:textSize="15.4sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

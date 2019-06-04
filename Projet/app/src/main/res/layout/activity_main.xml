@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/sfnsdisplay"
+            android:text="Welcome Back"
+            android:textColor="#171717"
+            android:textSize="32.6sp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/waveline" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/maven_pro_medium"
+            android:text="to"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="179dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sfnsdisplay"
+            android:src="@drawable/zoura"
+            android:textColor="#171717"
+            android:textSize="32.6sp" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rect_grayoutline"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Se Connecter"
+            android:textColor="@color/black"
+            android:textSize="15.4sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="S'inscrire"
+            android:textColor="@color/colorWhite"
+            android:textSize="15.4sp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

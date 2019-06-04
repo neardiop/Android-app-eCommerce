@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity">
+
+    <LinearLayout
+        android:id="@+id/Rlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/retour"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_cross" />
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle4"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/nav_cart"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="Mon panier"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_british_pound_symbol"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="7.85"
+                android:textSize="35dp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#b1b1b1"
+            android:layout_marginTop="30dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:text="Produit"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="QTY"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:gravity="right"
+                android:text="Prix"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#b1b1b1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text="Félicitation,Votre commande est entrain d'etre traité"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/card_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Rlayout1"
+        android:layout_above="@+id/l4">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+
+        <Button
+            android:id="@+id/next_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:text="Suivant"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="15dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

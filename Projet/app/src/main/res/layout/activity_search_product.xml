@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/Rlayout5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        tools:ignore="MissingConstraints"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/fer"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_cross"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/product_search"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Numéro de téléphone"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="29dp"
+            android:background="#b9b9b9"
+            android:layout_marginLeft="50dp"/>
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/product_search"
+            android:text="Recherche"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Rlayout5">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

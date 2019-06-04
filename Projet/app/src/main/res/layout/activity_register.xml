@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="235dp"
+            android:layout_height="114dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/zoura"
+            android:text="Welcome Back"
+            android:textColor="#171717" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/waveline" />
+
+
+
+        <EditText
+            android:id="@+id/register_username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Prénom"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+        <EditText
+            android:id="@+id/register_phone_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Numéro de téléphone"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+        <EditText
+            android:id="@+id/register_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="S'inscrire"
+            android:textColor="@color/black"
+            android:textSize="15.4sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

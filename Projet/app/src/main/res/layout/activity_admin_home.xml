@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomeActivity">
+
+    <Button
+        android:id="@+id/btn_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/gradient"
+        android:text="Ajouter un produit"
+        android:textSize="20dp"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/btn_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_add_product"
+        android:layout_margin="15dp"
+        android:background="@drawable/gradient"
+        android:text="Liste des commandes"
+        android:textSize="18dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_logout_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_command"
+        android:layout_margin="15dp"
+        android:background="@drawable/gradient"
+        android:text="Se déconnecter"
+        android:textSize="20dp"
+        android:textAllCaps="false"/>
+
+
+
+
+</RelativeLayout>

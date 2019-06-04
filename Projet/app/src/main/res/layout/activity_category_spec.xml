@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategorySpecActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ferm"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_cross" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/category_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/z"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

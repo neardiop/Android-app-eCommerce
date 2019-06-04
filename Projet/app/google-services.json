@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "236990670094",
+    "firebase_url": "https://ecommerce-39978.firebaseio.com",
+    "project_id": "ecommerce-39978",
+    "storage_bucket": "ecommerce-39978.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236990670094:android:ca209834eddd3303",
+        "android_client_info": {
+          "package_name": "com.emst.cours.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236990670094-u3049cvb90mag5jvqvn02pjdsgm4d0kc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emst.cours.ecommerce",
+            "certificate_hash": "d704d373f98127ffe932ce47507643a2805f87bc"
+          }
+        },
+        {
+          "client_id": "236990670094-gpiurjclr6n7f22lseo074c0jduvkn0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARA0I25VupbUEDiPEdqUJh2jeyjeXUq9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236990670094-gpiurjclr6n7f22lseo074c0jduvkn0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

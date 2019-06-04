@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_page_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:scrollbars="none">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Product title layout -->
+
+        <LinearLayout
+            android:id="@+id/product_page_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="59dp"
+            android:background="@drawable/product_page_title_bar_bg"
+            android:orientation="vertical"
+            android:tag="sticky-on_click_go_back">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/rr"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_cross" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#FFDFDFDF" />
+        </LinearLayout>
+
+        <!-- Product Image layout -->
+
+        <RelativeLayout
+            android:id="@+id/product_page_image_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_below="@+id/product_page_title_layout">
+
+            <ImageView
+                android:id="@+id/product_image_details"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="2dp"
+                android:background="@drawable/product_page_view_border"
+                android:padding="5dp"
+                android:src="@drawable/shoess"
+                android:tag="open_gallery_view" />
+
+            <LinearLayout
+                android:id="@+id/product_page_image_layout_offer_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                android:tag="on_click_go_to_product_page_offers_layout">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/offer_badge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="OFFER"
+                    android:textColor="#565656"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#FFDFDFDF" />
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/product_page_image_layout">
+
+
+            <LinearLayout
+                android:id="@+id/product_name"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/product_page_view_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_name_details"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="SAMSUNG GALAXY S DUOS S7562AM"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product price and ratings layout -->
+
+        <LinearLayout
+            android:id="@+id/product_page_price_ratings_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/first"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/product_page_view_border"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="187"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/product_price_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 2790"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:padding="20dp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#EBEBEB" />
+
+            <LinearLayout
+                android:id="@+id/product_page_price_rating_rating_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="6dp"
+                android:layout_weight="112"
+                android:orientation="vertical"
+                android:tag="open_review_page">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/product_page_rating_progress_bar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="80"
+                        android:progressDrawable="@drawable/ratings_star_progress_drawable"
+                        android:tag="open_review_page" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/product_description_details1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:text="347 User Reviews"
+                    android:textColor="#565656"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/product_page_ratings_count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:text=" 420 Ratings"
+                    android:textColor="#565656"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/product_page_price_ratings_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/product_page_price_ratings_layout"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/product_page_view_border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Description"
+                    android:textColor="#cccccc"
+                    android:textSize="18sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_circular_shape_silhouette" />
+
+                    <TextView
+                        android:id="@+id/product_description_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Textile and Synthetic"
+                        android:textColor="#4c4c4c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_circular_shape_silhouette" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Synthetic sole"
+                        android:textColor="#4c4c4c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_circular_shape_silhouette" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="Improved forefoot flex grooves"
+                        android:textColor="#4c4c4c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/l1"
+                    android:background="@drawable/rect1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Small"
+                        android:textSize="16sp"
+                        android:textColor="#4a4a4a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10cm x 24cm"
+                        android:textSize="11sp"
+                        android:textColor="#9b9b9b"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/l2"
+                    android:background="@drawable/rect1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medium"
+                        android:textSize="16sp"
+                        android:textColor="#4a4a4a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10cm x 24cm"
+                        android:textSize="11sp"
+                        android:textColor="#9b9b9b"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/l3"
+                    android:background="@drawable/rect1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large"
+                        android:textSize="16sp"
+                        android:textColor="#4a4a4a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10cm x 24cm"
+                        android:textSize="11sp"
+                        android:textColor="#9b9b9b"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/number_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="150dp"
+                android:layout_weight="1"
+                app:finalNumber="10"
+                app:initialNumber="1">
+
+            </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+            <Button
+                android:id="@+id/product_add_to_card_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="15dp"
+                android:layout_marginTop="500dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:text="Ajouter au panier"
+                android:textSize="15dp"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

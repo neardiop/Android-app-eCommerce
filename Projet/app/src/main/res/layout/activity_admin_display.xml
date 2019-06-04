@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDisplayActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/fer_disp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_cross" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste des produits"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/tl"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/v2"
+        android:layout_below="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:text="Produit"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="QTY"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:gravity="right"
+            android:text="Prix"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/v3"
+        android:layout_below="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#b1b1b1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+    android:layout_marginTop="10dp"
+    android:id="@+id/product_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/v3"
+    android:layout_above="@+id/l4">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>

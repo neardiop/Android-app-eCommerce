@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/ff"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_cross" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/final_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sélectionner une catégorie"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/tl"/>
+
+    <LinearLayout
+        android:id="@+id/f1"
+        android:layout_below="@+id/final_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/laptops"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ordinateurs"
+                android:textSize="16dp"
+                android:textColor="#2d2d2d"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/laptop_pc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sélectionner"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f2"
+        android:layout_below="@+id/f1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/female_dresses"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robes"
+                android:textSize="16dp"
+                android:textColor="#2d2d2d"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/female_dresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sélectionner"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f3"
+        android:layout_below="@+id/f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shoess"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chaussures"
+                android:textSize="16dp"
+                android:textColor="#2d2d2d"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sélectionner"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f4"
+        android:layout_below="@+id/f3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mobiles"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smartphones"
+                android:textSize="16dp"
+                android:textColor="#2d2d2d"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mobilephones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sélectionner"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
